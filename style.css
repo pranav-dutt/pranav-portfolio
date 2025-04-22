@@ -1,0 +1,234 @@
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #ffffff;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: padding 0.3s ease, box-shadow 0.3s ease;
+}
+.navbar.shrink {
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #f9f9f7;
+  color: #1F1F2E;
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3 {
+  font-family: 'Petrona', serif;
+}
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  background: #fff;
+  gap: 2rem;
+}
+.hero-text {
+  max-width: 600px;
+}
+.hero .highlight {
+  color: #CDA274;
+}
+.brand {
+  color: #F2542D;
+  font-weight: 600;
+}
+.hero-buttons {
+  margin-top: 1.5rem;
+}
+.btn-primary {
+  background: #CDA274;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+}
+.btn-secondary {
+  margin-left: 1rem;
+  border: 2px solid #CDA274;
+  color: #CDA274;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+}
+.hero-image img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.cards-section {
+  padding: 3rem 2rem;
+}
+.card-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.skill-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+.skill-card i {
+  font-size: 2rem;
+  color: #CDA274;
+  margin-bottom: 0.5rem;
+}
+.skill-card h3 {
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 500;
+}
+.skill-card:hover {
+  transform: translateY(-6px);
+}
+.cert-header {
+  margin-top: 3rem;
+}
+.cert-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+.cert-card {
+  display: flex;
+  align-items: center;
+  background: #f4eee6;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  font-weight: 500;
+  color: #1F1F2E;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.cert-card i {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: #CDA274;
+}
+.contact-section {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding: 1rem 1.2rem;
+  border-radius: 12px;
+  width: 140px;
+  text-decoration: none;
+  color: #1F1F2E;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.contact-card i {
+  font-size: 1.5rem;
+  color: #CDA274;
+  margin-bottom: 0.5rem;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  color: #CDA274;
+}
+
+
+.main-nav a {
+  margin-left: 2rem;
+  text-decoration: none;
+  font-weight: 500;
+  color: #1F1F2E;
+  font-family: 'DM Sans', sans-serif;
+  transition: color 0.3s ease;
+}
+.main-nav a:hover {
+  color: #CDA274;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.site-name {
+  font-family: 'Petrona', serif;
+  font-size: 1.5rem;
+  color: #1F1F2E;
+  margin: 0;
+}
+.main-nav a:visited {
+  color: #1F1F2E;
+}
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-image {
+    margin-top: 2rem;
+  }
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  .btn-secondary {
+    margin-left: 0;
+  }
+}
